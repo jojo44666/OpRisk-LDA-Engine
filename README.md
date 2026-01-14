@@ -1,0 +1,32 @@
+# OpRisk-LDA-Engine: Operational Risk Capital Model
+
+![Language](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Domain](https://img.shields.io/badge/Domain-Quantitative%20Risk-orange)
+![Method](https://img.shields.io/badge/Method-Monte%20Carlo%20LDA-red)
+
+##  Overview
+**OpRisk-LDA-Engine** is a quantitative risk modeling framework designed to calculate **Operational Risk Capital** (Economic Capital) using the **Loss Distribution Approach (LDA)**. 
+
+Unlike Market Risk (which models continuous price changes), Operational Risk deals with low-frequency, high-severity events (e.g., Internal Fraud, Cyber Attacks, Litigation). This project implements the industry-standard "Actuarial Approach" favored by Basel III/IV Advanced Measurement Approach (AMA) guidelines.
+
+It combines **Frequency distributions** and **Heavy-Tailed Severity distributions** via **Monte Carlo Convolution** to estimate the 99.9% Value at Risk (VaR).
+
+##  Mathematical Framework
+
+The model constructs the **Aggregate Loss Distribution** ($S$) for a specific time horizon (usually 1 year) using the following convolution:
+
+$$S = \sum_{i=1}^{N} X_i$$
+
+Where:
+1.  **Frequency ($N$):** The number of loss events per year, modeled as a **Poisson Random Variable**:
+    $$P(N=n) = \frac{e^{-\lambda} \lambda^n}{n!}$$
+2.  **Severity ($X_i$):** The monetary loss of each event, modeled using a **Generalized Pareto Distribution (GPD)** to capture "Fat Tails" (extreme outliers):
+    $$F(x) = 1 - \left( 1 + \xi \frac{x - \mu}{\sigma} \right)^{-1/\xi}$$
+3.  **Convolution:** Since there is no closed-form solution for the sum of a random number of random variables, we use **Monte Carlo Simulation** (1,000,000 iterations) to numerically approximate the distribution of $S$.
+
+##  Features
+* **Vectorized Simulation:** Uses NumPy vectorization instead of loops for high-performance Monte Carlo simulations (capable of simulating 1M years in seconds).
+* **Heavy-Tail Modeling:** Implements Extreme Value Theory (EVT) concepts by fitting GPD to loss severities.
+* **Capital Calculation:** Automatically computes the **Value at Risk (VaR 99.9%)** and **Expected Loss (EL)**.
+* **Visualization:** Generates a dashboard showing Frequency, Severity, and the final Capital Distribution.
